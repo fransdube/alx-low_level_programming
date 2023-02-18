@@ -1,6 +1,6 @@
 /*
- * File: 1-last_digit.c
- * Auth: Brennan D Baraban
+ * File: 0-positive_or_negative.c
+ * Auth: Frans Dube
  */
 
 #include <stdlib.h>
@@ -39,3 +39,4 @@ int main(void)
 	return (0);
 
 }
+
