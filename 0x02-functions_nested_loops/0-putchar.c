@@ -1,21 +1,22 @@
 #include "main.h"
 /**
- * main - main function .
- *
+ * main - print _putchar
+ * is written by frans
  * Return: 0
  */
+
+
 int main(void)
 {
-	char h[] = "Main";
-	int s = sizeof(h);
-	int i;
-
-	for (i = 0; i < s; i++)
-	{
-		_putchar(h[i]);
-
-	}
-
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
 	_putchar('\n');
 	return (0);
 }
+
