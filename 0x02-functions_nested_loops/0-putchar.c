@@ -1,4 +1,4 @@
-#includei "main.h"
+#include "main.h"
 /**
  * main - main function .
  *
