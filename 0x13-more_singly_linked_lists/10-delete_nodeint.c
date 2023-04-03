@@ -1,12 +1,5 @@
 #include "lists.h"
-/**
- * delete_nodeint_at_index - thsi function delete a node
- * @head: the head of list
- * @index: the index to put the delete node
- * Description: this function delete a node
- * section header: the header of this function is lists.h)*
- * Return: 1 in success -1 in failure
- */
+
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
 	listint_t *actual, *next;
