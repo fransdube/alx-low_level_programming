@@ -3,8 +3,8 @@
 
 /*
  * File: elf.h
- * Auth: John K
- * Desc: elf version 1
+ * Project By Frans
+ * Desc: elf version 2
  */
 #include <elf.h>
 
