@@ -1,32 +1,32 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
+
 /**
- * check_cycle - check list
- * @list: list
- * Return: 1 or  0.
+ * check_cycle - check for loop in LL
+ * @list: head of linked list
+ *
+ * Description - check for loops in LL
+ * Return: 1 if cycled, 0 if not
  */
+
 int check_cycle(listint_t *list)
 {
-	listint_t *iter1;
-	listint_t *iter2;
+	listint_t *slow, *fast;
 
-	iter1 = list;
-	iter2 = list;
-	if (list == NULL)
+	if (!list)
 	{
 		return (0);
 	}
-	iter2 = iter2->next;
-	while (iter2 != NULL && iter2->next != NULL && iter1 != NULL)
+	slow = list;
+	fast = list->next;
+	while (fast && slow && fast->next)
 	{
-		if (iter1 == iter2)
+		if (slow == fast)
 		{
 			return (1);
 		}
-		iter1 = iter1->next;
-		iter2 = iter2->next->next;
+		slow = slow->next;
+		fast = fast->next->next;
 	}
 	return (0);
+}
 }
