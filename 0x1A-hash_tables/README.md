@@ -1,0 +1,5 @@
+-The README for the alx_Software_Engineering project.
+-it is written for the project called "0x1A. C - Hash tables".
+-c.
+-algorithm.
+-data structures.
